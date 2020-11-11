@@ -25,7 +25,7 @@ display: flex;
 align-items: center;
 }
 
-p {
+.title {
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
@@ -41,7 +41,7 @@ font-size: 14px;
 line-height: 16px;
 color: #FFFFFF;
 
-/*position: absolute;*/
+position: absolute;
 width: 209px;
 height: 44px;
 left: calc(50% - 209px/2 - 359.5px);
