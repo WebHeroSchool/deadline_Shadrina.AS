@@ -1,0 +1,52 @@
+div {
+font-family: PT Serif;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 32px; 
+color: black; }
+
+nav {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: black;
+}
+
+h1 {
+font-family: PT Serif;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 66px;
+display: flex;
+align-items: center;
+}
+
+.title {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+}
+
+button {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #FFFFFF;
+
+position: absolute;
+width: 209px;
+height: 44px;
+left: calc(50% - 209px/2 - 359.5px);
+top: 531px;
+
+background: #0056EC;
+border-radius: 4px;
+}
