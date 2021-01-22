@@ -14,6 +14,7 @@ body {
 }
 
 .logo {
+	margin-right: 62%;
 	position: relative;
 	padding: 40px 0;
 	padding-left: 48px;
@@ -49,15 +50,16 @@ body {
 
 .menu__item {
 position: relative;
-margin-right: 15px; 
-font: 500 20px/21px roboto,arial,helvetica,sans-serif;
+margin-right: 13px;
+margin-left: 11px; 
+font: 500 18px/21px roboto,arial,helvetica,sans-serif;
 color: #000;
 text-decoration: none;
 transition: opacity .5s;
 
 }
 .menu__item: last-child {
-margin-right:11px; 
+margin-right:10px; 
 }
 
 .menu__item_active::after
