@@ -95,6 +95,11 @@ background: #0056EC;
 .menu__item:hover:after , .menu__item_active::after {
 opacity: 1;
 width: 100%;
+margin: 6px 0 0 0;
+}
+
+.menu__box {
+	display: none;
 }
 
 .main {
@@ -111,13 +116,15 @@ background: #ECF3FF;
 .main__title {
 align-items: center;
 flex-wrap: wrap;
-/*margin: 14px 0 40px 4px;
-margin-bottom: 40px;
-font: bold 70px/90px pt_serif, arial, helvetica, sans-serif;
-*/
 margin: 14px 0 31px 1px;
 font: bold 3.7vw/90px pt_serif, arial, helvetica, sans-serif;
+/*
+margin: 14px 0 31px 1px;
+font: bold 3.7vw/90px pt_serif, arial, helvetica, sans-serif;
+margin: 14px 0 40px 4px;
+font: bold 70px/90px pt_serif, arial, helvetica, sans-serif;
 
+*/
 }
 
 .main__subtitle {
@@ -125,7 +132,6 @@ width: 430px;
 height: 50px;
 
 margin: 0 0 42px 0;
-/*margin-bottom: 41px;*/
 font: 22px/1.4vw roboto, arial, helvetica, sans-serif;
 }
 
@@ -133,14 +139,6 @@ font: 22px/1.4vw roboto, arial, helvetica, sans-serif;
 min-width: max-content;
 height: 57px;
 width: 271px;
-/*
-height: 59px;
-width: 271px;
-left: calc(50% - 209px/2 - 359.5px);
-top: 531px;
-padding: 14px/16px;
-display: inline-block;
-*/
 
 font:500 18px/17px roboto, arial, helvetica, sans-serif;
 color: #FFF;
@@ -180,33 +178,185 @@ margin: 5.5vw 0 0 4px;
 
 
 @media (max-width:768px) {
+
+.wrapper {
+    margin: auto;
+    width: 74%;
+}
+
 .menu {
 	display: none;
 }
 
+/*
+
+.hamburger-menu {
+	display: block;
+}
+
+.logo__circle {
+	position: fixed;
+	margin:24px;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+}
+
+.logo__circle_color_dark-blue {
+	background: #0056EC;
+}
+
+.logo__circle_color_blue {
+	left: 8px;
+	top: 56%;
+	background: #C8DBFB;
+	opacity: .7;
+	}
+
+*/
+.hamburger-menu {
+	display: block;
+}
+
+#menu__toggle {
+	opacity: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 19px;
+    left: 325px;
+    width: 26px;
+    height: 57px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span, 
+.menu__btn>span::before, 
+.menu__btn>span::after {
+	display: block;
+	position: absolute;
+
+	width: 100%;
+	height: 2px;
+
+	background: #0056EC;
+}
+
+.menu__btn>span::before {
+	content: '';
+	top: -7px;
+}
+
+.menu__btn>span::after {
+	content: '';
+	top: -14px;	
+}
+
+.menu__box {
+	display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 46vw 0;
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+  /*box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);*/
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 19.5px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__item_active::after {
+    opacity: 0;
+}
+
+.logo__text {
+	display: none;
+}
+
+.logo {
+    margin-right: 62%;
+    margin-left: -9%;
+    position: relative;
+    padding: 38px 0;
+    padding-left: 48px;
+    font: bold 24px/31px pt_serif,arial,helvetica,sans-serif;
+    font-size: 25px;
+}
+
 .header {
-	margin-bottom: 28px;
+	margin-bottom: 12px;
 }
 
 .main {
 	text-align: center;
 	padding: 74% 0 0;
-	background-size: 74%;
+	background-size: 100%;
 	background-position: top center;
 }
 
 .main__title {
-	margin-bottom: 44px;
-	font: bold 30px/39px pt_serif,arial,helvetica,sans-serif;
+	margin: 55px 0 31px 5px;
+	font: bold 8.7vw/10.4vw pt_serif,arial,helvetica,sans-serif;
 }
 
 .main__subtitle {
-	margin-bottom: 25px;
+	text-align: center;
+	padding: 0.5%;
+	width: 250px;
+	margin: 0 0 31px 14px;
 	font: 500 16px/19px roboto,arial,helvetica,sans-serif
 }
 
 .main__button {
+	margin-left: 35px;
+    width: 209px;
+	height: 44px;
+	text-align: center;
 	font: 500 14px/16px roboto,arial,helvetica,sans-serif
 }
+
+
+
+
 
 }
