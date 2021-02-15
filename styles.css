@@ -147,6 +147,7 @@ background: #ECF3FF;
     text-decoration: none;
     border-radius: 0.28vw;
     transition: opacity .5s;
+    box-shadow: 0 0 15px rgb(19 83 147);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,6 +155,26 @@ background: #ECF3FF;
 
 .main__button:hover {
 opacity: .5;
+}
+
+.animate-motion {
+	animation:animate_motion 5s 0s both infinite;
+}
+
+.animate-motion:hover {
+	animation: none;
+}
+ 
+@keyframes animate_motion {
+	0%, 20% {
+		transform: translate3d(0, 0, 0);
+	}
+	10%, 14%, 18%, 2%, 6% {
+		transform: translate3d(-7px, 0, 0);
+	}
+	12%, 16%, 4%, 8% {
+		transform: translate3d(7px, 0, 0);
+	}
 }
 
 .section__box {
@@ -270,10 +291,31 @@ justify-content: center;
     text-decoration: none;
     border-radius: 0.3vw;
     transition: opacity .5s;
+    box-shadow: 0 0 15px rgb(19 83 147);
     display: flex;
     align-items: center;
     justify-content: center;
     letter-spacing: 0.06vw;
+}
+
+.animate-motion {
+	animation:animate_motion 5s 0s both infinite;
+}
+
+.animate-motion:hover {
+	animation: none;
+}
+ 
+@keyframes animate_motion {
+	0%, 20% {
+		transform: translate3d(0, 0, 0);
+	}
+	10%, 14%, 18%, 2%, 6% {
+		transform: translate3d(-7px, 0, 0);
+	}
+	12%, 16%, 4%, 8% {
+		transform: translate3d(7px, 0, 0);
+	}
 }
 
 .section__box {
@@ -391,10 +433,31 @@ justify-content: center;
     text-decoration: none;
     border-radius: 0.4vw;
     transition: opacity .5s;
+    box-shadow: 0 0 15px rgb(19 83 147);
     display: flex;
     align-items: center;
     justify-content: center;
     letter-spacing: 0.07vw;
+}
+
+.animate-motion {
+	animation:animate_motion 5s 0s both infinite;
+}
+
+.animate-motion:hover {
+	animation: none;
+}
+ 
+@keyframes animate_motion {
+	0%, 20% {
+		transform: translate3d(0, 0, 0);
+	}
+	10%, 14%, 18%, 2%, 6% {
+		transform: translate3d(-7px, 0, 0);
+	}
+	12%, 16%, 4%, 8% {
+		transform: translate3d(7px, 0, 0);
+	}
 }
 
 .section__box {
@@ -440,8 +503,8 @@ justify-content: center;
     display: flex;
     align-items: center;
     position: fixed;
-    /* top: 2.7%; */
-    left: 86.6vw;
+    top: 0.7%;
+    left: 87vw;
     width: 6.8vw;
     height: 20.1vw;
     cursor: pointer;
@@ -457,6 +520,7 @@ justify-content: center;
     width: 100%;
     height: 0.6vw;
     background: #0056EC;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
 }
 
 .menu__btn>span::before {
@@ -471,7 +535,7 @@ justify-content: center;
 
 .menu__box {
 	display: block;
-    position: fixed;
+    position: absolute;
     visibility: hidden;
     top: 0;
     right: -100%;
@@ -518,12 +582,11 @@ justify-content: center;
     opacity: 0;
 }
 
-/*.menu__item:hover:after, 
+.menu__item:hover:after, 
 .menu__item_active::after {
-    opacity: 1;
-    width: 100%;
-    margin: 12px 0 0 0;
-}*/
+    width: 0%;
+    /*margin: 4.33vw 0 0 0;*/
+}
 
 .logo__text {
 	display: none;
@@ -591,6 +654,27 @@ justify-content: center;
     font: 500 4vw/2vw roboto,arial,helvetica,sans-serif;
     border-radius: 1vw;
     letter-spacing: -0.1vw;
+    box-shadow: 0 0 15px rgb(19 83 147);
+}
+
+.animate-motion {
+	animation:animate_motion 5s 0s both infinite;
+}
+
+.animate-motion:hover {
+	animation: none;
+}
+ 
+@keyframes animate_motion {
+	0%, 20% {
+		transform: translate3d(0, 0, 0);
+	}
+	10%, 14%, 18%, 2%, 6% {
+		transform: translate3d(-7px, 0, 0);
+	}
+	12%, 16%, 4%, 8% {
+		transform: translate3d(7px, 0, 0);
+	}
 }
 
 .section__box {
@@ -638,6 +722,7 @@ justify-content: center;
     width: 100%;
     height: 0.6vw;
     background: #0056EC;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
 }
 
 .menu__btn>span::before {
@@ -699,12 +784,11 @@ justify-content: center;
     opacity: 0;
 }
 
-/*.menu__item:hover:after, 
+.menu__item:hover:after, 
 .menu__item_active::after {
-    opacity: 1;
-    width: 100%;
-    margin: 12px 0 0 0;
-}*/
+    width: 0%;
+    /*margin: 4.33vw 0 0 0;*/
+}
 
 .logo__text {
 	display: none;
@@ -772,6 +856,27 @@ justify-content: center;
     font: 500 4vw/2vw roboto,arial,helvetica,sans-serif;
     border-radius: 1vw;
     letter-spacing: -0.1vw;
+    box-shadow: 0 0 15px rgb(19 83 147);
+}
+
+.animate-motion {
+	animation:animate_motion 5s 0s both infinite;
+}
+
+.animate-motion:hover {
+	animation: none;
+}
+ 
+@keyframes animate_motion {
+	0%, 20% {
+		transform: translate3d(0, 0, 0);
+	}
+	10%, 14%, 18%, 2%, 6% {
+		transform: translate3d(-7px, 0, 0);
+	}
+	12%, 16%, 4%, 8% {
+		transform: translate3d(7px, 0, 0);
+	}
 }
 
 .section__box {
